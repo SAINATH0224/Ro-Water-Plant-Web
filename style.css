@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.submit-container {
+    text-align: center;
+}
+
+button {
+    background: #0066cc;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0052a3;
+}
+
+input[type="number"]:disabled,
+select:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+}
+
+.no-spinners::-webkit-inner-spin-button, 
+.no-spinners::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+#dateRangeForm {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#recordsInRange {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0066cc;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+    .container, #dateRangeForm, #recordsInRange {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+.analytics-summary {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chart-container {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
